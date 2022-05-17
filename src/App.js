@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import Compo1 from "./components/Compo1";
+import Compo2 from "./components/Compo2";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <p>App 组件</p>
+        <Compo1></Compo1>
+        <Compo2></Compo2>
+      </div>
+    )
+  }
 }
-
-export default App;
