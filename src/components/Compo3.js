@@ -13,6 +13,7 @@ export default class Compo3 extends Component {
       <div>
         <h1>我是子组件3</h1>
         <button onClick={this.addNum.bind(this)}>点击增加一项</button>
+        {/* 循环遍历数组 */}
         <ul>
           {this.state.nums.map((item, index) => {
             return(
