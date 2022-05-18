@@ -1,0 +1,25 @@
+.tabBar {
+  width: 200px;
+}
+button {
+  outline: none;
+}
+
+.active {
+  background-color: #f5f5f5;
+}
+
+.content {
+  width: 200px;
+}
+
+.current {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: pink;
+}
+
+.notCurrent {
+  display: none;
+}
