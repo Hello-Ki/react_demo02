@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 // import Compo1 from "./components/Compo1";
 // import Compo2 from "./components/Compo2";
 // import Compo3 from "./components/Compo3";
@@ -7,9 +7,10 @@ import { Component } from "react";
 // import Compo6 from "./components/Compo6";
 
 import "./App.css"
-import BaseRouter from "./router";
+import {Link} from "react-router-dom";
+// import BaseRouter from "./router";
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       // <div>
@@ -21,7 +22,17 @@ export default class App extends Component {
       //   <Compo5></Compo5>
       //   <Compo6></Compo6> */}
       // </div>
-    <BaseRouter />
-    )
+      <div>
+        <Link to="/home">Home</Link>
+         | 
+         <Link to="/about">About</Link>
+         {/* 动态路由匹配 */}
+        {/* <Link to="/about/:id">About</Link> */}
+        {this.props.children}
+        {/* <BaseRouter /> */}
+      </div>
+    );
   }
 }
+
+export default App;
